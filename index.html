@@ -25,6 +25,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -186,67 +188,111 @@
       </div>
     </section>
 
-    <!-- ------------------------ -->
     <!-- Section Pourquoi Nous Choisir -->
     <section id="why-us" class="why-us section">
 
-      <!-- Section : Ce qui nous distingue -->
-<div class="container section-title" data-aos="fade-up">
-  <h2>Ce qui nous distingue</h2>
-  <p>ZOOM VISION simplifie l’intégration des services financiers grâce à une architecture unifiée, sécurisée et évolutive.</p>
-</div>
-
-<div class="row g-4 mt-4">
-  <!-- Bloc comparatif -->
-  <div class="col-lg-6" data-aos="fade-right">
-    <div class="feature-card highlight-orange">
-      <div class="icon-wrapper">
-        <i class="bi bi-diagram-3-fill"></i>
+      <div class="container section-title text-center" data-aos="fade-up">
+        <h2 class="section-heading">Ce qui nous distingue</h2>
+        <p class="section-subtitle">ZOOM VISION simplifie l’intégration des services financiers grâce à une architecture
+          unifiée, sécurisée et évolutive.</p>
       </div>
-      <h4>Intégration Mobile Money</h4>
-      <p><strong>Approche traditionnelle :</strong> Développements spécifiques pour chaque opérateur (MTN, Airtel, banques), coûteux et complexes.</p>
-      <p><strong>ZOOM VISION :</strong> Une seule plateforme pour connecter tous les opérateurs et institutions financières.</p>
-    </div>
-  </div>
 
-  <!-- Blocs techniques -->
-  <div class="col-lg-6">
-    <div class="row g-3">
-      <div class="col-md-12" data-aos="fade-left" data-aos-delay="100">
-        <div class="feature-card highlight-blue">
-          <div class="icon-wrapper">
-            <i class="bi bi-lightning-charge-fill"></i>
+      <div class="row g-4 text-center">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card highlight-orange">
+            <div class="icon-wrapper">
+              <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <h4>Intégration Mobile Money</h4>
+            <p><strong>Avant :</strong> Intégration séparée avec Airtel Money, Mobile Money, banques… plusieurs contrats
+              à gérer.</p>
+            <p><strong>ZOOM VISION :</strong> Une seule intégration, un seul contrat pour accéder à tous les opérateurs
+              et banques.</p>
           </div>
-          <h4>Intégration rapide</h4>
-          <p>Une API unique pour accéder à tous les services Mobile Money et bancaires.</p>
+        </div>
+
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="feature-card highlight-blue">
+            <div class="icon-wrapper">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <h4>Intégration rapide</h4>
+            <p>Une API unique pour connecter tous les opérateurs Mobile Money et institutions bancaires en un temps
+              record.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card highlight-green">
+            <div class="icon-wrapper">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <h4>Sécurité avancée</h4>
+            <p>Protection des transactions de bout en bout grâce à des protocoles de sécurité renforcés.</p>
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="350">
+          <div class="feature-card highlight-purple">
+            <div class="icon-wrapper">
+              <i class="bi bi-bar-chart-steps"></i>
+            </div>
+            <h4>Évolutivité</h4>
+            <p>Gestion fluide des gros volumes et extension facile des services selon vos besoins.</p>
+
+          </div>
         </div>
       </div>
-      <div class="col-md-12" data-aos="fade-left" data-aos-delay="200">
-        <div class="feature-card highlight-green">
-          <div class="icon-wrapper">
-            <i class="bi bi-shield-lock-fill"></i>
-          </div>
-          <h4>Sécurité avancée</h4>
-          <p>Chiffrement de bout en bout et protocoles de sécurité renforcés.</p>
-        </div>
-      </div>
-      <div class="col-md-12" data-aos="fade-left" data-aos-delay="300">
-        <div class="feature-card highlight-purple">
-          <div class="icon-wrapper">
-            <i class="bi bi-bar-chart-steps"></i>
-          </div>
-          <h4>Évolutivité</h4>
-          <p>Solutions modulaires qui grandissent avec votre entreprise.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
     </section>
 
-    <!-- ----------------------------- -->
+    <!-- Section Témoignages -->
+    <section class="testimonial-zone" id="testimonials">
+      <div class="container">
+        <div class="testimonial-header text-center" data-aos="fade-up">
+          <h2>Ce que disent nos Clients</h2>
+          <p>Découvrez comment nos solutions transforment les entreprises et accompagnent leur croissance.</p>
+        </div>
+
+        <div class="testimonial-list" data-aos="fade-up" data-aos-delay="100">
+          <!-- Exemple de témoignage -->
+          <!-- <div class="testimonial-item">
+            <i class="bi bi-chat-left-quote"></i>
+            <p class="testimonial-text">"ZOOM VISION nous a permis d’unifier nos intégrations Mobile Money en quelques
+              jours."</p>
+            <div class="testimonial-author">Marie K. — Responsable Digital</div>
+          </div>
+
+          <div class="testimonial-item">
+            <i class="bi bi-chat-left-quote"></i>
+            <p class="testimonial-text">"La plateforme est stable, rapide et parfaitement adaptée aux besoins du marché
+              congolais."</p>
+            <div class="testimonial-author">Alain B. — Directeur Commercial</div>
+          </div>
+
+          <div class="testimonial-item">
+            <i class="bi bi-chat-left-quote"></i>
+            <p class="testimonial-text">"Nous avons réduit nos coûts tout en renforçant la sécurité des transactions."
+            </p>
+            <div class="testimonial-author">Sandrine M. — CTO</div>
+          </div> -->
+
+          <!-- Témoignages ou message vide -->
+          <div class="testimonial-empty">
+            <i class="bi bi-chat-left-dots"></i>
+            <p>Aucun témoignage disponible pour le moment</p>
+          </div>
+        </div>
+
+        <div class="testimonial-button text-center" data-aos="fade-up" data-aos-delay="200">
+          <button class="btn-testimonial" onclick="openTestimonialModal()">
+            <i class="bi bi-plus-circle"></i>
+            <span>Ajouter votre témoignage</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ------------------------------------ -->
 
     <section id="about" class="about section">
 
@@ -621,6 +667,44 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Modal Témoignage -->
+  <div id="testimonialModal" class="modal-overlay">
+    <div class="modal-content">
+      <h3>Ajouter votre témoignage</h3>
+      <form>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="role">Fonction :</label>
+        <input type="text" id="role" name="role" required>
+
+        <label for="message">Témoignage :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <div class="modal-actions">
+          <button type="submit">Envoyer</button>
+          <button type="button" onclick="closeTestimonialModal()">Annuler</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    function openTestimonialModal() {
+      document.getElementById('testimonialModal').classList.add('show');
+    }
+
+    function closeTestimonialModal() {
+      document.getElementById('testimonialModal').classList.remove('show');
+    }
+  </script>
+
 
 </body>
 
