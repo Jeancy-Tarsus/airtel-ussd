@@ -820,7 +820,7 @@ section,
   overflow: hidden;
   background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
   /* background: linear-gradient(135deg, #002147 0%, #005fa3 100%); */
-  padding: 10px 0;
+  padding: 0px 0;
   color: white;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
