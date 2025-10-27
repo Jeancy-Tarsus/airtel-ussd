@@ -51,7 +51,7 @@
 }
 
 .dark-background {
-  --background-color: #01020e;
+  --background-color: #03051f;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
@@ -779,7 +779,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -820,7 +820,7 @@ section,
   overflow: hidden;
   background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
   /* background: linear-gradient(135deg, #002147 0%, #005fa3 100%); */
-  padding: 0px 0;
+  padding: 10px 0;
   color: white;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
@@ -988,15 +988,13 @@ section,
   transition: transform 0.3s ease;
 }
 
-
---------------------- .service-card:hover {
+.service-card:hover {
   transform: translateY(-5px);
 }
 
 .service-icon {
   font-size: 2rem;
   margin-bottom: 15px;
-  /* color: #00cfff; */
 }
 
 .service-card h4 {
@@ -1134,12 +1132,11 @@ section,
   }
 }
 
-
 /* 2e partie*/
 /* ===== SECTION ===== */
 .services-section {
-  background: #a2a2b4;
-  padding: 20px 0;
+  background: #f4f6fc;
+  padding: 20px 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -1159,21 +1156,20 @@ section,
 .section-subtitle {
   text-align: center;
   font-size: 1.1rem;
-  color: #000000;
+  color: #333;
+  margin-top: 0;
   margin-bottom: 2.5rem;
-}
-
-.section-subtitle p {
-  text-align: center;
-  color: #db0505;
-
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 /* ===== CARTE SERVICE ===== */
 .service-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 40px 25px;
+  padding: 30px 20px;
   min-height: 460px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -1210,7 +1206,6 @@ section,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: inline-block;
 }
 
 /* Animation au survol */
@@ -1313,20 +1308,28 @@ section,
   color: #6f42c1;
 }
 
-.service-card {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+/* ===== BOUTON FINAL ===== */
+.btn.btn-primary {
+  background-color: #0066ff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
+
+.btn.btn-primary:hover {
+  background-color: #0052cc;
+}
+
 
 /* suite */
 
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
-.why-us {
+/* .why-us {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1582,7 +1585,98 @@ section,
   line-height: 1.6;
   max-width: 700px;
   margin: 0 auto;
+} */
+
+
+/* ===== SECTION ===== */
+.why-us.section {
+  background: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/* ===== TITRES ===== */
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ===== CARTE FONCTIONNELLE ===== */
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== ICÔNE ===== */
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* ===== VARIANTS COULEURS ===== */
+.highlight-orange .icon-wrapper {
+  background: linear-gradient(135deg, #fd7e14, #ffa94d);
+}
+
+.highlight-blue .icon-wrapper {
+  background: linear-gradient(135deg, #007bff, #3399ff);
+}
+
+.highlight-green .icon-wrapper {
+  background: linear-gradient(135deg, #28a745, #5cd65c);
+}
+
+.highlight-purple .icon-wrapper {
+  background: linear-gradient(135deg, #6f42c1, #a36ef9);
+}
+
+/* ===== CONTENU ===== */
+.feature-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.feature-card p strong {
+  color: #000;
+}
+
 
 /* tmoignage */
 .testimonial-zone {
