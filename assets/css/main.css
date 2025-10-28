@@ -2535,6 +2535,31 @@ section,
   color: #1d4ed8;
 }
 
+.php-email-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.php-email-form .form-control {
+  flex: 1 1 250px;
+  min-width: 200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .php-email-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .php-email-form .form-control,
+  .submit-btn {
+    width: 100%;
+  }
+}
+
 /* Apropos de nous */
 
 
